@@ -24,7 +24,7 @@ function App() {
   const inputEmail = useRef()
 
 const navigate = useNavigate()
-
+  
 async function registerNewUser() {
     const data = await api.post('/usuarios/', {
       email: inputEmail.current.value,
